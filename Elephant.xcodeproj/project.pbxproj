@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844097FB1BF4EEDF00ABC960 /* CustomDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844097FA1BF4EEDF00ABC960 /* CustomDetailCell.swift */; };
 		84BD87471BDBC56C006074F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD87461BDBC56C006074F9 /* AppDelegate.swift */; };
 		84BD87491BDBC56C006074F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD87481BDBC56C006074F9 /* ViewController.swift */; };
 		84BD874C1BDBC56C006074F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BD874A1BDBC56C006074F9 /* Main.storyboard */; };
-		84BD874E1BDBC56C006074F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BD874D1BDBC56C006074F9 /* Images.xcassets */; };
 		84BD87511BDBC56C006074F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BD874F1BDBC56C006074F9 /* LaunchScreen.xib */; };
 		84BD875D1BDBC56C006074F9 /* ElephantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD875C1BDBC56C006074F9 /* ElephantTests.swift */; };
+		84BD87671BDBCFC4006074F9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD87661BDBCFC4006074F9 /* DetailViewController.swift */; };
+		84C63F361BF7048E004BB8FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C63F351BF7048E004BB8FC /* Images.xcassets */; };
+		F487B5DE1BE7432200BF8057 /* FindTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487B5DD1BE7432200BF8057 /* FindTableViewCell.swift */; };
+		F487B5E41BE8A96100BF8057 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487B5E31BE8A96100BF8057 /* CustomCell.swift */; };
+		F487B5EA1BE8AA6100BF8057 /* DoubanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487B5E91BE8AA6100BF8057 /* DoubanViewController.swift */; };
+		F49B41161BF052D60064041C /* findViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49B41151BF052D60064041C /* findViewController.swift */; };
+		F4C62BB21BEC8EED002515A5 /* HotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C62BB11BEC8EED002515A5 /* HotViewController.swift */; };
+		F4E83E681BF46F4200D95DB0 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E83E671BF46F4200D95DB0 /* LaunchScreenViewController.swift */; };
+		F4E83E6A1BF47CD800D95DB0 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E83E691BF47CD800D95DB0 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +35,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		844097FA1BF4EEDF00ABC960 /* CustomDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDetailCell.swift; sourceTree = "<group>"; };
 		84BD87411BDBC56C006074F9 /* Elephant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elephant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BD87451BDBC56C006074F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BD87461BDBC56C006074F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84BD87481BDBC56C006074F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84BD874B1BDBC56C006074F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		84BD874D1BDBC56C006074F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84BD87501BDBC56C006074F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		84BD87561BDBC56C006074F9 /* ElephantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElephantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BD875B1BDBC56C006074F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BD875C1BDBC56C006074F9 /* ElephantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElephantTests.swift; sourceTree = "<group>"; };
+		84BD87661BDBCFC4006074F9 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		84C63F351BF7048E004BB8FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F487B5DD1BE7432200BF8057 /* FindTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindTableViewCell.swift; sourceTree = "<group>"; };
+		F487B5E31BE8A96100BF8057 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		F487B5E91BE8AA6100BF8057 /* DoubanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubanViewController.swift; sourceTree = "<group>"; };
+		F49B41151BF052D60064041C /* findViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = findViewController.swift; sourceTree = "<group>"; };
+		F4C62BB11BEC8EED002515A5 /* HotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotViewController.swift; sourceTree = "<group>"; };
+		F4E83E671BF46F4200D95DB0 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		F4E83E691BF47CD800D95DB0 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +95,21 @@
 		84BD87431BDBC56C006074F9 /* Elephant */ = {
 			isa = PBXGroup;
 			children = (
+				84C63F351BF7048E004BB8FC /* Images.xcassets */,
+				F4E83E691BF47CD800D95DB0 /* UIHelper.swift */,
+				F487B5DD1BE7432200BF8057 /* FindTableViewCell.swift */,
 				84BD87461BDBC56C006074F9 /* AppDelegate.swift */,
 				84BD87481BDBC56C006074F9 /* ViewController.swift */,
 				84BD874A1BDBC56C006074F9 /* Main.storyboard */,
-				84BD874D1BDBC56C006074F9 /* Images.xcassets */,
+				84BD87661BDBCFC4006074F9 /* DetailViewController.swift */,
 				84BD874F1BDBC56C006074F9 /* LaunchScreen.xib */,
 				84BD87441BDBC56C006074F9 /* Supporting Files */,
+				F487B5E31BE8A96100BF8057 /* CustomCell.swift */,
+				F487B5E91BE8AA6100BF8057 /* DoubanViewController.swift */,
+				F4C62BB11BEC8EED002515A5 /* HotViewController.swift */,
+				F49B41151BF052D60064041C /* findViewController.swift */,
+				F4E83E671BF46F4200D95DB0 /* LaunchScreenViewController.swift */,
+				844097FA1BF4EEDF00ABC960 /* CustomDetailCell.swift */,
 			);
 			path = Elephant;
 			sourceTree = "<group>";
@@ -156,14 +183,19 @@
 		84BD87391BDBC56C006074F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = w3cmm;
 				TargetAttributes = {
 					84BD87401BDBC56C006074F9 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = XTWM4R2294;
+						LastSwiftMigration = 0800;
 					};
 					84BD87551BDBC56C006074F9 = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = 84BD87401BDBC56C006074F9;
 					};
 				};
@@ -173,7 +205,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 84BD87381BDBC56C006074F9;
@@ -192,9 +223,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C63F361BF7048E004BB8FC /* Images.xcassets in Resources */,
 				84BD874C1BDBC56C006074F9 /* Main.storyboard in Resources */,
 				84BD87511BDBC56C006074F9 /* LaunchScreen.xib in Resources */,
-				84BD874E1BDBC56C006074F9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +243,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BD87671BDBCFC4006074F9 /* DetailViewController.swift in Sources */,
 				84BD87491BDBC56C006074F9 /* ViewController.swift in Sources */,
+				F487B5E41BE8A96100BF8057 /* CustomCell.swift in Sources */,
+				F4E83E6A1BF47CD800D95DB0 /* UIHelper.swift in Sources */,
+				F49B41161BF052D60064041C /* findViewController.swift in Sources */,
+				F4C62BB21BEC8EED002515A5 /* HotViewController.swift in Sources */,
+				F487B5EA1BE8AA6100BF8057 /* DoubanViewController.swift in Sources */,
+				F487B5DE1BE7432200BF8057 /* FindTableViewCell.swift in Sources */,
+				F4E83E681BF46F4200D95DB0 /* LaunchScreenViewController.swift in Sources */,
 				84BD87471BDBC56C006074F9 /* AppDelegate.swift in Sources */,
+				844097FB1BF4EEDF00ABC960 /* CustomDetailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,10 +312,13 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: JINBIAO LI (3CNUE77E8S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: JINBIAO LI (3CNUE77E8S)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -291,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -316,9 +359,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: JINBIAO LI (XTWM4R2294)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: JINBIAO LI (XTWM4R2294)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -329,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -340,9 +385,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: JINBIAO LI (3CNUE77E8S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: JINBIAO LI (3CNUE77E8S)";
 				INFOPLIST_FILE = Elephant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.w3cmm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -350,9 +402,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: JINBIAO LI (XTWM4R2294)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: JINBIAO LI (XTWM4R2294)";
 				INFOPLIST_FILE = Elephant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.w3cmm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -360,17 +419,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ElephantTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.w3cmm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elephant.app/Elephant";
 			};
 			name = Debug;
@@ -379,13 +437,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ElephantTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.w3cmm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elephant.app/Elephant";
 			};
 			name = Release;
@@ -409,6 +466,7 @@
 				84BD87621BDBC56C006074F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84BD87631BDBC56C006074F9 /* Build configuration list for PBXNativeTarget "ElephantTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +475,7 @@
 				84BD87651BDBC56C006074F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

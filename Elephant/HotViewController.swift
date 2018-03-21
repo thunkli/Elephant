@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController:UITableViewController, NSURLConnectionDataDelegate {
+class HotViewController:UITableViewController, NSURLConnectionDataDelegate {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     //var refreshControl = UIRefreshControl()
     var dateFormatter = DateFormatter()
@@ -16,36 +16,19 @@ class ViewController:UITableViewController, NSURLConnectionDataDelegate {
     var objects = NSMutableArray()
     var datas : NSMutableData!
     var segementValue:String = ""
-    var api = "//api.douban.com/v2/movie/in_theaters?apikey=0da7cb6c5ed3ec6528f762451c7bc52f&"
-    @IBAction func indexChanged(_ sender: UISegmentedControl){
-        switch segmentedControl.selectedSegmentIndex {
-            case 0:
-                api = "//api.douban.com/v2/movie/in_theaters?apikey=0da7cb6c5ed3ec6528f762451c7bc52f"
-                self.startRequest()
-            case 1:
-                api = "//api.douban.com/v2/movie/coming_soon?apikey=0da7cb6c5ed3ec6528f762451c7bc52f"
-                self.startRequest()
-            default:
-                break;
-        }
-    }
-    
+    var api = "//api.douban.com/v2/movie/us_box?apikey=0da7cb6c5ed3ec6528f762451c7bc52f"
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        
         //初始化UIRefreshControl
         //rc.attributedTitle = NSAttributedString(string: "下拉刷新")
         let rc = UIRefreshControl();
-        rc.addTarget(self, action: #selector(ViewController.refreshTableView), for: UIControlEvents.valueChanged)
+        rc.addTarget(self, action: #selector(HotViewController.refreshTableView), for: UIControlEvents.valueChanged)
         self.refreshControl = rc
         self.startRequest()
-        //NSThread.sleepForTimeInterval(1.0)
     }
     func refreshTableView() {
         if (self.refreshControl?.isRefreshing == true) {
-            
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
             let now = Date()
             //print(self.dateFormatter.stringFromDate(now))
             let updateString = "最后更新：" + self.dateFormatter.string(from: now)
@@ -64,62 +47,21 @@ class ViewController:UITableViewController, NSURLConnectionDataDelegate {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.objects.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //返回的是UITableViewCell对象
         let cellIdentifier = "movieCell"
         let cell:CustomCell = (tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CustomCell)!
         
         let dict = self.objects[(indexPath as NSIndexPath).row] as! NSDictionary
-
-        let title = dict["title"] as! String
+        let dictSubject = dict["subject"] as! NSDictionary
+        let title = dictSubject["title"] as! String
+        //let director = (directors[0]["name"]) as! String
         
         //cell.movieTitle? .text = director + "《" + title + "》"
-        cell.movieTitle? .text = title
-        
-        if let casts = dict["casts"] as? NSArray {
-            
-            if (casts.count>0) {
-                var castsName = [String]()
-                for key in casts {
-                    castsName.append(key["name"] as! String)
-                }
-                cell.movieCasts? .text = castsName.joined(separator: " / ")
-            } else {
-                cell.movieCasts? .text = "未知"
-            }
-            
-        } else {
-            cell.movieCasts? .text = "未知"
-        }
-        if let movieRating = dict["rating"] as? NSDictionary {
-            if let average = movieRating["average"] as? Float32 {
-                cell.movieScore? .text = String(average)
-            } else {
-                cell.movieScore? .text = "0.0"
-            }
-        } else {
-            cell.movieScore? .text = "0.0"
-        }
-        if let directors = dict["directors"] as? NSArray {
-            if directors.count > 0 {
-                if let movieHead = directors[0]["avatars"] as? NSDictionary {
-                    let movieHeadImage = UIImage(data: try! Data(contentsOf: URL(string: movieHead.value(forKey: "medium") as! String)!))
-                    cell.movieHead? .image = movieHeadImage
-                    
-                } else {
-                    cell.movieHead? .image = UIImage(named: "director")
-                }
-            } else {
-                cell.movieHead? .image = UIImage(named: "director")
-            }
-        } else {
-            cell.movieHead? .image = UIImage(named: "director")
-        }
-        
-        cell.movieHead.layer.cornerRadius = 8
-        cell.movieHead.layer.masksToBounds = true
-        
+        cell.textLabel? .text = title
+        cell.detailTextLabel? .text = String((dict["box"] as! Float32)/10000) + "万"
+        //print(castsName)
         return cell
     }
     
@@ -148,7 +90,7 @@ class ViewController:UITableViewController, NSURLConnectionDataDelegate {
     
     func connectionDidFinishLoading(_ connection: NSURLConnection) {
         
-        let resDict = JSONSerialization.jsonObject(with: self.datas as Data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary!
+        let resDict = (try? JSONSerialization.jsonObject(with: self.datas as Data, options: JSONSerialization.ReadingOptions.allowFragments)) as! NSDictionary!
         
         if resDict != nil {
             self.reloadView(resDict!)
@@ -162,7 +104,7 @@ class ViewController:UITableViewController, NSURLConnectionDataDelegate {
         self.tableView.reloadData()
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -176,15 +118,14 @@ class ViewController:UITableViewController, NSURLConnectionDataDelegate {
             let detailViewController = segue.destination as! DetailViewController//as改为as!
             let indexPath = self.tableView.indexPathForSelectedRow as IndexPath?
             let selectedIndex = (indexPath! as NSIndexPath).row
-            let selectName = (self.objects[selectedIndex] as! NSDictionary)["title"] as! String
-            detailViewController.id = (self.objects[selectedIndex] as! NSDictionary)["id"] as! String as NSString!
-            detailViewController.title = selectName
+            detailViewController.id = ((self.objects[selectedIndex] as! NSDictionary)["subject"] as! NSDictionary)["id"] as! String as NSString!
+            detailViewController.title = ((self.objects[selectedIndex] as! NSDictionary)["subject"] as! NSDictionary)["title"] as? String
             //Swift1.1 -> Swift1.2修改点 end
             
         }
         
     }
-
-
+    
+    
 }
 

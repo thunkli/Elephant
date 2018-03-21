@@ -1,0 +1,75 @@
+
+/* Class = "UITableViewController"; title = "US box office chart"; ObjectID = "3Zs-Wd-1cf"; */
+"3Zs-Wd-1cf.title" = "北美票房榜";
+
+/* Class = "UINavigationItem"; title = "US box office chart"; ObjectID = "84B-UX-PQl"; */
+"84B-UX-PQl.title" = "北美票房榜";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "84M-vM-Dxg"; */
+"84M-vM-Dxg.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "Details of douban"; ObjectID = "9L6-m6-l0I"; */
+"9L6-m6-l0I.title" = "豆瓣详情";
+
+/* Class = "UITableViewController"; title = "Find"; ObjectID = "A4C-qh-Dt5"; */
+"A4C-qh-Dt5.title" = "发现";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "DCU-j9-CI9"; */
+"DCU-j9-CI9.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Explore"; ObjectID = "Gql-l2-1SE"; */
+"Gql-l2-1SE.title" = "发现";
+
+/* Class = "UINavigationController"; title = "find"; ObjectID = "Kwh-3i-flh"; */
+"Kwh-3i-flh.title" = "发现";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "MHf-lY-Qbd"; */
+"MHf-lY-Qbd.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "douban"; ObjectID = "N5T-CA-DhT"; */
+"N5T-CA-DhT.title" = "去豆瓣";
+
+/* Class = "UINavigationController"; title = "Ranking"; ObjectID = "VHU-SH-wJV"; */
+"VHU-SH-wJV.title" = "榜单";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "aG3-Df-BX6"; */
+"aG3-Df-BX6.title" = "影讯";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "bZ1-b2-lOa"; */
+"bZ1-b2-lOa.text" = "Detail";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fpH-wy-cff"; */
+"fpH-wy-cff.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "g6j-0a-n8W"; */
+"g6j-0a-n8W.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Explore"; ObjectID = "gOq-Kn-WHH"; */
+"gOq-Kn-WHH.title" = "发现";
+
+/* Class = "UITableViewController"; title = "Home"; ObjectID = "gxg-NL-mua"; */
+"gxg-NL-mua.title" = "Home";
+
+/* Class = "UITabBarItem"; title = "Ranking"; ObjectID = "hC7-Ik-yhQ"; */
+"hC7-Ik-yhQ.title" = "榜单";
+
+/* Class = "UISegmentedControl"; meb-Pe-8wm.segmentTitles[0] = "正在热映"; ObjectID = "meb-Pe-8wm"; */
+"meb-Pe-8wm.segmentTitles[0]" = "正在热映";
+
+/* Class = "UISegmentedControl"; meb-Pe-8wm.segmentTitles[1] = "即将上映"; ObjectID = "meb-Pe-8wm"; */
+"meb-Pe-8wm.segmentTitles[1]" = "即将上映";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "p9W-rQ-Wxi"; */
+"p9W-rQ-Wxi.text" = "Title";
+
+/* Class = "UINavigationController"; title = "home"; ObjectID = "rFa-MU-I54"; */
+"rFa-MU-I54.title" = "榜单";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "sis-pg-Gcv"; */
+"sis-pg-Gcv.text" = "Detail";
+
+/* Class = "UIViewController"; title = "Details of douban"; ObjectID = "tUY-3B-tgb"; */
+"tUY-3B-tgb.title" = "豆瓣详情";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xS9-u0-onQ"; */
+"xS9-u0-onQ.text" = "Label";
